@@ -1,0 +1,130 @@
+#head {
+    width: 100%;
+    float: left;
+    height: 65px;
+    background-color: #000;
+}
+
+#head img {
+    width: 50px;
+    height: 45px;
+    float: left;
+    margin: 10px;
+}
+
+#head #menu-mobile-icon {
+    display: none;
+}
+
+#head #menu {
+    float: right;
+}
+
+#head #menu a{
+    float: left;
+    font-size: 1.05em;
+    font-family: 'Roboto', sans-serif;
+    transition: color .1s linear;
+    color: rgba(255,255,255,0.65);
+    padding: 20px;
+}
+  
+#head .log{
+    margin: 14px;
+    margin-right: 20px;
+    float: right;
+    background: #0C57FB;
+    color: #fff;
+    font-weight: 599;
+    font-family: 'Nunito', sans-serif;
+    padding: 6px 10px;
+    border-radius: 4px;
+}
+
+#head .log:hover{
+    background: #003AFF;
+}
+
+#head .vip-log{
+    margin: 14px;
+    margin-right: 20px;
+    float: right;
+    background: rgb (0, 0, 0, 0);
+    border: 1.1px solid #FFDF00;
+    color: #FFDF00;
+    font-weight: 599;
+    font-family: 'Nunito', sans-serif;
+    padding: 6px 10px;
+    border-radius: 4px;
+}
+
+#head .vip-log:hover{
+    -webkit-transition: all 0.2s ease-out 0.05s;
+     -moz-transition: all 0.2s ease-out 0.05s;
+     -o-transition: all 0.2s ease-out 0.05s;
+     transition: all 0.2s ease-out 0.05s;
+    background: #DAA520;
+    color: #fff;
+    border: 1.1px solid #FFDF00;
+}
+
+#head #menu a:hover{
+    color: #fff;
+}
+
+#mobile-menu {
+    display: none;
+}
+
+@media (max-width: 750px) {
+    
+  #head #menu {
+    display: none;
+  } 
+    
+  #head #menu-mobile-icon {
+    width: 61px;
+    height: 50px;
+    margin: 7.5px;
+    float: right;
+    display: block;
+    cursor: pointer;
+  }
+    
+  #head .log{
+    margin: 14px;
+    margin-right: 5px;
+    float: right;
+    background: #0C57FB;
+    color: #fff;
+    font-size: 1.15em;
+    font-weight: 599;
+    font-family: 'Nunito', sans-serif;
+    padding: 6px 10px;
+    border-radius: 4px;
+}
+    
+  #mobile-menu {
+    background-color: #000;
+    display: none;
+    width: 100%;
+    height: auto;
+    float: left;   
+  }
+    
+  #mobile-menu.active {
+    display: block;   
+  }
+    
+  #mobile-menu a {
+    width: 80%;
+    color: rgba(255,255,255,0.65);
+    float: left; 
+    font-size: 1.2em;
+    font-family: 'Roboto', sans-serif;
+    transition: color .1s linear;
+    color: rgba(255,255,255,0.65);
+    padding: 20px;
+  } 
+    
+}

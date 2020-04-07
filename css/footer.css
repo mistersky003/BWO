@@ -1,0 +1,106 @@
+#footer {
+    width: 100%;
+    float: left;
+    height: 340px;
+    background: url(../img/footer_backround.jpg);
+    background-position: center; 
+    background-color: #000;
+    /*border-top: 1.5px solid #fff; */
+}
+
+#footer #footer-block{
+    width: 100%;
+    height: inherit;
+    background-color: #000;
+    opacity: 0.5;
+    position: absolute;
+}
+
+
+#footer ul{
+    position: relative;
+    width: 30%;
+    height: auto;
+    float: left;
+    margin-top: 40px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+
+#footer ul #title p{
+    color: #fff;
+    font-size: 1.85em;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 15px;
+}
+
+#footer ul #link a{
+    width: 100%;
+    color: rgba(255,255,255,0.65);
+    font-size: 1.2em;
+    margin: 5px 0;
+    float: left;
+    font-weight: 599;
+    font-family: 'Source Sans Pro', sans-serif;
+    transition: color .15s linear;
+    cursor: pointer;
+}
+
+#footer ul #link a:hover{
+    color: #fff;
+}
+
+#footer #info-block {
+    position: relative;
+    width: 80%;
+    float: left;
+    border: 1px;
+    margin: 0% 10%;
+    margin-top: 30px;
+    border-top: 1px solid rgba(255,255,255,0.65);
+}
+
+#footer #info-block p{
+    margin-top: 25px;
+    color: #fff;
+    width: 100%;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 599;
+    font-size: 0.85em;
+}
+
+@media (max-width: 1300px) {
+  
+#footer ul #title p{
+    color: #fff;
+    font-size: 1.75em;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 15px;
+}
+
+#footer ul #link a{
+    width: 100%;
+    color: rgba(255,255,255,0.65);
+    font-size: 1.05em;
+    margin: 5px 0;
+    float: left;
+    font-weight: 599;
+    font-family: 'Source Sans Pro', sans-serif;
+    transition: color .15s linear;
+    cursor: pointer;
+}    
+
+#footer #info-block p {
+    margin-top: 25px;
+    color: #fff;
+    width: 100%;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 599;
+    font-size: 0.85em;
+}
+    
+}
+

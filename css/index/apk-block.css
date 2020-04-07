@@ -1,0 +1,108 @@
+#apk-block {
+    width: 100%;
+    float: left;
+    margin: 0;
+    background-color: #000;
+    height: auto;
+}
+
+#apk-block #info-block {
+   width: 30%;
+   float: left;
+   margin: 0;
+   padding: 100px 10%;
+   background-color: #000;
+}
+
+#apk-block #info-block .title{
+   width: 100%;
+   float: left;
+   color: #fff;
+   font-family: 'Source Sans Pro', sans-serif;
+   font-weight: bold;
+   font-size: 2.2em;
+}
+
+#apk-block #info-block .dwn-btn{
+   float: left;
+   color: #fff;
+   font-family: 'Source Sans Pro', sans-serif;
+   font-weight: normal;
+   padding: 10px;
+   margin: 20px 0;
+   border-radius: 7px;
+   background-color: #0C57FB;
+   font-size: 1.2em;
+}
+
+#apk-block #img-block {
+   float: left;
+   width: 30%;
+   height: auto;
+   margin: 0 10%;
+}
+
+#apk-block #img-block #apk-preview{
+    margin: 100px 0;
+    width: 100%;
+    float: left;
+    height: 360px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+#apk-block #img-block #apk-preview img{
+    float: left;
+    width: 100%;
+}
+
+@media (max-width: 750px) {
+    
+  #apk-block #info-block {
+   width: 80%;
+   float: left;
+   margin: 0;
+   padding: 70px 10%;
+   background-color: #000;
+  } 
+    
+  #apk-block #info-block .title{
+   width: 100%;
+   float: left;
+   color: #fff;
+   font-family: 'Source Sans Pro', sans-serif;
+   font-weight: bold;
+   font-size: 2.15em;
+}
+    
+#apk-block #info-block .dwn-btn{
+   float: left;
+   color: #fff;
+   font-family: 'Source Sans Pro', sans-serif;
+   font-weight: normal;
+   padding: 12px;
+   margin: 20px 0;
+   border-radius: 8px;
+   background-color: #0C57FB;
+   font-size: 1.7em;
+}
+    
+#apk-block #img-block {
+   float: left;
+   width: 90%;
+   height: auto;
+   margin: 0 5%;
+}
+
+#apk-block #img-block #apk-preview{
+    margin: 100px 0;
+    margin-top: 0;
+    width: 100%;
+    float: left;
+    height: 360px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+    
+}
+

@@ -1,0 +1,15 @@
+
+# HTID:6128945: DO NOT REMOVE OR MODIFY THIS LINE AND THE LINES BELOW
+php_value display_errors 1
+# DO NOT REMOVE OR MODIFY THIS LINE AND THE LINES ABOVE HTID:6128945:
+AddDefaultCharset utf-8
+
+php_value max_execution_time 500
+php_value max_input_time 500
+php_value upload_max_filesize 30M
+php_value post_max_size 30M
+
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.php -f
+RewriteRule ^(.*)$ $1.php

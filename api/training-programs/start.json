@@ -1,0 +1,50 @@
+{
+    "programID": 0,
+    "programName": "Easy",
+    "programDays": 30,
+    "days": [
+        {
+        "exercise": [
+        {
+            "ExID": 1,
+            "ExName": "Plank",
+            "ExType": "time",
+            "ExAmount": 30
+        },
+        {
+            "ExID": 4,
+            "ExName": "Pulling up",
+            "ExType": "count",
+            "ExAmount": 15
+        },
+        {
+            "ExID": 2,
+            "ExName": "Cobra",
+            "ExType": "time",
+            "ExAmount": 20
+        }]
+    },
+    {
+        "exercise": [
+        {
+            "ExID": 4,
+            "ExName": "Plank",
+            "ExType": "time",
+            "ExAmount": 30
+        },
+        {
+            "ExID": 5,
+            "ExName": "Pulling up",
+            "ExType": "count",
+            "ExAmount": 15
+        },
+        {
+            "ExID": 2,
+            "ExName": "Cobra",
+            "ExType": "time",
+            "ExAmount": 20
+        }]
+    }
+    
+    ]
+}

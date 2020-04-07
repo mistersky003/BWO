@@ -1,0 +1,125 @@
+#post-block {
+    background-color: #fff;
+    width: 70%;
+    float: left;
+    margin-left: 5%;
+    margin-right: 25%;
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+
+/*
+#post-block .back-btn {
+    background-color: #fff;
+    width: 40px;
+    height: 40px;
+    float: left;
+    margin: 5px;
+}
+*/
+
+#post-block .title {
+    background-color: #fff;
+    width: 100%;
+    float: left;
+    font-size: 1.7em;
+    font-weight: 599;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+#post-block .full {
+    background-color: #fff;
+    width: 100%;
+    float: left;
+    margin-top: 15px;
+    font-size: 1.15em;
+    font-weight: 599;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+#post-block .information {
+    background-color: #fff;
+    width: 100%;
+    float: left;
+    margin-top: 15px;
+    padding-bottom: 10px;
+    font-size: 0.95em;
+    font-weight: 599;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #858585;
+}
+
+#post-block #recomendation {
+    border-top: 1px solid #858585;
+    background-color: #fff;
+    width: 100%;
+    float: left;
+    margin-top: 10px;
+}
+
+#post-block #recomendation a{
+    width: 100%;
+    float: left;
+    margin-top: 25px;
+    font-size: 1.15em;
+    font-weight: 599;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: black;
+}
+
+@media (max-width: 1300px) {
+    
+#post-block {
+    background-color: #fff;
+    width: 90%;
+    float: left;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 75px;
+    margin-bottom: 75px;
+}
+    
+#post-block .title {
+    background-color: #fff;
+    width: 100%;
+    float: left;
+    font-size: 1.75em;
+    font-weight: 599;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+#post-block .full {
+    background-color: #fff;
+    width: 100%;
+    float: left;
+    margin-top: 15px;
+    font-size: 1.25em;
+    font-weight: 599;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+#post-block .information {
+    background-color: #fff;
+    width: 100%;
+    float: left;
+    margin-top: 15px;
+    padding-bottom: 10px;
+    font-size: 1.05em;
+    font-weight: 599;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #858585;
+}
+    
+#post-block #recomendation a{
+    width: 100%;
+    float: left;
+    margin-top: 25px;
+    font-size: 1.25em;
+    font-weight: 599;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: black;
+}
+    
+}
+
+
