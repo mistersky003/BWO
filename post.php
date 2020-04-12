@@ -1,3 +1,5 @@
+<?php require '/localization/language.php'; ?>
+
 <!DOCTYPE html>
 <html lang="ua">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">

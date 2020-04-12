@@ -37,6 +37,16 @@
     outline:none;
 }
 
+#login-block .error{
+    float: left;
+    text-align: center;
+    margin: 5px 0;
+    color: red;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 599;
+    font-size: 1.05em;
+}
+
 #login-block .btn-login{
     width: 100%;
     float: left;
