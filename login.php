@@ -38,6 +38,8 @@ require '/localization/language.php';
     }
 
     $('.btn-login').click(function(){
+        
+    $('.error').text("");
     
     let email = $('#email').val();
     let password = $('#password').val();

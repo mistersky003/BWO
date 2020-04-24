@@ -4,101 +4,18 @@
 <html lang="ua">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1"> 
-<link rel="icon" href="img/logo.png">
+<link rel="icon" href="img/havicon.png">
 <link rel="stylesheet" href="css/main.css">
 <link rel="stylesheet" href="css/fonts.css">
-<link rel="stylesheet" href="css/news/news-block.css">
-<link rel="stylesheet" href="css/footer.css">
      
      <?php
     
         require '/php/modules/news/title-page.php';
         require '/php/modules/head.php';
-     
-     ?>
-     
-     
-     <div id="search-block">
-             <input type="text" placeholder="Search" id="word">
-             <p class="res-error">Nothing found</p>
-         </div>
-         
-    <div class="search" id="news-block">
-    </div>
-     
-     <div class="all" id="news-block">
-       
-    <!--   
-     <div id="empty-block">
-         <img src="img/empty-box.png">
-         <p>No news found</p>
-     </div>
-    -->    
-      
-       
-    <!--     
-      
-        <a href="">
-         <div id="news">
-             <div id="fon"></div>
-             <img id="icon" src="img/a-man-who-is-experiencing-masturbation-before-a-workout.jpg">
-                <div id="text-block">
-                 <p class="title">Lorem ipsum dolor sit amet, consectetur титдои</p>
-                 <p class="short">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati laudantium recusandae, fugiat dolore maxime veritatis totam, mollitia porro alias illo adipisci fugit nisi est repellat.
-                 <p class="statictic">10000 &#183; 20.02.2020</p>
-             </div>
-             
-         </div>
-        </a>
-         
-       <a href=""> 
-        <div id="news">
-             <img id="icon" src="img/program_wallpaper_1.jpg">
-                <div id="text-block">
-                 <p class="title">Lorem ipsum dolor sit amet, consectetur</p>
-                 <p class="short">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati laudantium recusandae, fugiat dolore maxime veritatis totam, mollitia porro alias illo adipisci fugit nisi est repellat. 
-                 <p class="statictic">10000 &#183; 20.02.2020</p>
-             </div>
-             
-         </div>
-        </a>
-         
-        <a href="">  
-        <div id="news">
-             <img id="icon" src="img/a-man-who-is-experiencing-masturbation-before-a-workout.jpg">
-                <div id="text-block">
-                 <p class="title">Lorem ipsum dolor sit amet, consectetur</p>
-                 <p class="short">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati laudantium recusandae, fugiat dolore maxime veritatis totam, mollitia porro alias illo adipisci fugit nisi est repellat.
-                 <p class="statictic">10000 &#183; 20.02.2020</p>
-             </div>
-             
-         </div>
-        </a> 
-    -->  
-        
-        <?php require_once 'php/news_list.php'; ?>
-         
-     </div>
-     
+        require '/php/modules/news/news-block.php';
+        require '/php/modules/footer.php';
     
-     <div id="footer">
-        <div id="footer-block">
-           </div>
-            <ul>
-                <li id="title"><p>Company</p></li>
-                <li id="link"><a href="">Contact us</a></li>
-                <li id="link"><a href="">News</a></li>
-                <li id="link"><a href="">API</a></li>
-            </ul>
-            <ul>
-                <li id="title"><p>App</p></li>
-                <li id="link"><a>BWO for android</a></li>
-            </ul>
-            <div id="info-block">
-                <p>Copyright © BWO 2020 - <script>var d = new Date();
-                   var n = d.getFullYear();  document.write(n);</script></p>
-            </div>
-     </div>
+     ?>
      
      
 </html>
@@ -143,11 +60,11 @@ var NewsController = {
     request: function (q) {
        
         $.ajax({
-         url:"http://localhost/BWO/api/news/get.php?token=bwo_125487w2&q=" + q,
+         url:"php/testing/search?q=" + q,
          success:function(res){
             let json = JSON.parse(res);
              if (typeof json['error'] !== "undefined") {
-                if (json.error == "04"){
+                if (json.error == "11"){
                    $('.res-error').show();   
                    $('.all').hide();   
                 }
@@ -172,7 +89,7 @@ var NewsController = {
 $( "#word" ).on('input', function(e) {
     let word = $('#word').val();
     if (word.length > 2) {
-       NewsController.request($('#word').val()); 
+       NewsController.request(word); 
     } else if (word.length < 3) {
         $('.search').hide();
         $('.all').show();

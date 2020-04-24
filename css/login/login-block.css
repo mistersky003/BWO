@@ -11,7 +11,7 @@
     float: left;
     margin: 100px 35%;
     margin-bottom: 200px;
-    height: 500px;
+    height: auto;
 }
 
 #login-block p{
@@ -36,6 +36,35 @@
     font-size: 1.05em;
     outline:none;
 }
+
+/*-------Register style-----------*/
+
+#login-block .input-data{
+    width: calc(50% - 24px);
+    float: left;
+    text-align: left;
+    padding: 10px;
+    margin: 10px 0;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 599;
+    font-size: 1.05em;
+    outline:none;
+}
+
+#login-block #sex-chose{
+    width: 100%;
+    float: left;
+    text-align: left;
+    padding: 10px;
+    margin: 5px 0;
+    margin-bottom: 20px;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 599;
+    font-size: 1.05em;
+    outline:none;
+}
+
+/*---------------------------------*/
 
 #login-block .error{
     float: left;
@@ -113,7 +142,7 @@
     float: left;
     margin: 100px 5%;
     margin-bottom: 200px;
-    height: 500px;
+    height: auto;
 }
     
 #login-block p{
@@ -133,6 +162,33 @@
     text-align: left;
     padding: 10px;
     margin: 10px 0%;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 599;
+    font-size: 1.25em;
+    border: 2px solid silver;
+    outline:none;
+}
+    
+#login-block .input-data{
+    width: calc(50% - 24px);
+    float: left;
+    text-align: left;
+    padding: 10px;
+    margin: 10px 0%;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 599;
+    font-size: 1.25em;
+    border: 2px solid silver;
+    outline:none;
+}
+    
+#login-block #sex-chose{
+    width: 100%;
+    float: left;
+    text-align: left;
+    padding: 10px;
+    margin: 10px 0%;
+    margin-bottom: 20px;
     font-family: 'Noto Sans', sans-serif;
     font-weight: 599;
     font-size: 1.25em;

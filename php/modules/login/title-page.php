@@ -1,5 +1,7 @@
 <?php
 
-echo "<title>BWO | Login</title>";
+$loc = getLocalization("localization/".$_COOKIE['Language']."/login/login.json");
+
+echo "<title>".$loc['page-name']."</title>";
 
 ?>

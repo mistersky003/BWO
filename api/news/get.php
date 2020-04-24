@@ -1,6 +1,6 @@
 <?php
 
-function getNews ($sortType, $count) {
+function getNews ($sortType, $count, $language) {
 
     $mysqli = new mysqli("localhost", "bwo","bwo108");
 	$mysqli->query(" SET NAMES 'utf8' "); 
@@ -10,16 +10,16 @@ function getNews ($sortType, $count) {
     
     if ($sortType == "new") {
         if ($count != "all") {
-           $request = "SELECT * FROM `bwo`.`news` ORDER BY `id` DESC LIMIT ".$count;
+           $request = "SELECT * FROM `bwo`.`news_".$language."` ORDER BY `id` DESC LIMIT ".$count;
         } else if ($count == "all") {
-           $request = "SELECT * FROM `bwo`.`news` ORDER BY `id` DESC";
+           $request = "SELECT * FROM `bwo`.`news_".$language."` ORDER BY `id` DESC";
         }
     } else if ($sortType == "all") {
            
         if ($count != "all") {
-           $request = "SELECT * FROM `bwo`.`news` LIMIT ".$count;
+           $request = "SELECT * FROM `bwo`.`news_".$language."` LIMIT ".$count;
         } else if ($count == "all") {
-           $request = "SELECT * FROM `bwo`.`news`";
+           $request = "SELECT * FROM `bwo`.`news".$language."`";
         }
         
     }
@@ -50,7 +50,7 @@ function getNewsById ($id) {
 	$mysqli->query(" SET NAMES 'utf8' "); 
 	ini_set("display_errors", 1);
     
-    $request = "SELECT * FROM `bwo`.`news` WHERE `id` = ".$id;
+    $request = "SELECT * FROM `bwo`.`news_".$language."` WHERE `id` = ".$id;
     
     $REQ = $mysqli->query($request);
     
@@ -82,7 +82,7 @@ function search ($q) {
 	$mysqli->query(" SET NAMES 'utf8' "); 
 	ini_set("display_errors", 1);
     
-    $request = "SELECT * FROM `bwo`.`news` WHERE `author` LIKE '%$q%' OR  `title` LIKE '%$q%' ORDER BY `id` DESC";
+    $request = "SELECT * FROM `bwo`.`news".$language."` WHERE `author` LIKE '%$q%' OR  `title` LIKE '%$q%' ORDER BY `id` DESC";
     
     $search_request = $mysqli->query($request);
     
@@ -111,7 +111,7 @@ function search ($q) {
 }
 
 
-if (isset($_GET['token'])){
+if (isset($_GET['token']) && isset($_GET['lang'])){
     
     $token = $_GET['token'];
     
@@ -123,24 +123,24 @@ if (isset($_GET['token'])){
    
     if ($t->num_rows > 0) {
         $res_tok = $t->fetch_assoc();
-        if ($res_tok['rank'] > 1) {
+        if ($res_tok['rank'] > 0) {
             
-            
+            $language = $_GET['lang'];
             
             if (isset($_GET['type'])){
                 if (isset($_GET['count'])){
-                   getNews($_GET['type'], $_GET['count']); 
+                   getNews($_GET['type'], $_GET['count'], $language); 
                 } else {
                    getNews($_GET['type'], "all");
                 }
             } 
             
             if (isset($_GET['id'])){
-                getNewsById($_GET['id']);
+                getNewsById($_GET['id'], $language);
             }
             
             if (isset($_GET['q'])) {
-                search($_GET['q']);
+                search($_GET['q'], $language);
             }
             
         } else {

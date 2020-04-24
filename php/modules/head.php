@@ -1,6 +1,6 @@
 <?php
 
-$loc = getLocalization("localization/".$_COOKIE['Language']."/head.json");
+@$loc = getLocalization("localization/".$_COOKIE['Language']."/head.json");
 
 /*Link css */
 
@@ -73,13 +73,13 @@ if (isset($_COOKIE['user'])) {
         <img src=\"img/menu.png\" id=\"menu-mobile-icon\">
         <a class=\"vip-log\" href=\"user?token=".$tkn."\" >".$name."</a>
         <div id=\"menu\">
-            <a href=\"programs\" >Training programs</a>
-            <a href=\"news\" >What's new?</a>
+            <a href=\"programs\" >".$loc['training-programs']."</a>
+            <a href=\"news\" >".$loc['whats-new']."</a>
         </div>
     </div>
      <div id=\"mobile-menu\">
-            <a href=\"programs\" >Training programs</a>
-            <a href=\"news\" >What's new?</a>
+            <a href=\"programs\" >".$loc['training-programs']."</a>
+            <a href=\"news\" >".$loc['whats-new']."</a>
      </div>"; 
         
     } else {
@@ -89,13 +89,13 @@ if (isset($_COOKIE['user'])) {
         <img src=\"img/menu.png\" id=\"menu-mobile-icon\">
         <a class=\"log\" href=\"user?token=".$tkn."\">".$name."</a>
         <div id=\"menu\">
-            <a href=\"programs\" >Training programs</a>
-            <a href=\"news\" >What's new?</a>
+            <a href=\"programs\" >".$loc['training-programs']."</a>
+            <a href=\"news\" >".$loc['whats-new']."</a>
         </div>
     </div>
      <div id=\"mobile-menu\">
-            <a href=\"programs\" >Training programs</a>
-            <a href=\"news\" >What's new?</a>
+            <a href=\"programs\" >".$loc['training-programs']."</a>
+            <a href=\"news\" >".$loc['whats-new']."</a>
      </div>";
         
     }

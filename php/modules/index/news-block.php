@@ -1,46 +1,37 @@
 <?php
 
+$loc = getLocalization("localization/".$_COOKIE['Language']."/index/news-block.json");
+
 /* Link css */
 
 echo "<link rel=\"stylesheet\" href=\"css/index/news.css\">";
 
 echo "<div id=\"news-block\">
         
-        <p class=\"title-block-new\">News</p>
+        <p class=\"title-block-new\">".$loc['title-news']."</p>
         
-        <div id=\"nws-all\">
+        <div id=\"nws-all\">";
             
-         <a href=\"post?id=\">
+            
+           $response = file_get_contents("http://bodywonly.000webhostapp.com/api/news/get.php?token=token_user_5e21f198a2716&lang=".$_COOKIE['Language']."&type=new&count=3", true); 
+            
+           $json = json_decode($response, true);   
+
+           for ($i = 0; $i < count($json); $i++) {
+
+       echo "<a href=\"post?id=".$json[$i]['id']."\">
          <div id=\"news\">
              <div id=\"op\"></div>
-             <img src=\"img/a-man-who-is-experiencing-masturbation-before-a-workout.jpg\" class=\"icon\">
-             <p class=\"title\">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+             <img src=\"".$json[$i]['img']."\" class=\"icon\">
+             <p class=\"title\">".$json[$i]['title']."</p>
          </div>
-         </a>
+         </a>";
          
-         <a href=\"post?id=\">
-         <div id=\"news\">
-             <div id=\"op\"></div>
-             <img src=\"img/a-man-who-is-experiencing-masturbation-before-a-workout.jpg\" class=\"icon\">
-             <p class=\"title\">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
-         </div>
-         </a>
+         }
          
-          <a href=\"post?id=\">
-         <div id=\"news\">
-             <div id=\"op\"></div>
-             <img src=\"img/a-man-who-is-experiencing-masturbation-before-a-workout.jpg\" class=\"icon\">
-             <p class=\"title\">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
-         </div>
-         </a>
          
-        </div>
-    
-        <div id=\"btn-c\">
-           <a href=\"news\" class=\"more\">More</a> 
-        </div>
-         
-     </div>";
+        echo "</div><div id=\"btn-c\"><a href=\"news\" class=\"more\">".$loc['btn-more']."</a> 
+        </div></div>";
 
 
 

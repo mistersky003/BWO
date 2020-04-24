@@ -1,0 +1,16 @@
+{
+    "page-name": "BWO | Регістрація",
+    "create-your-own-acount": "Створіть власний акаунт",
+    "pr-name": "Ім'я",
+    "pr-email": "Електрона пошта",
+    "pr-password": "Створіть пароль (не менше 6 символів)",
+    "pr-re-password": "Повторіть пароль",
+    "personal-data": "Особиста інформація",
+    "pr-age": "Вік",
+    "pr-growth": "Ріст",
+    "pr-weight": "Вага",
+    "sex": "Стать",
+    "sl-male": "Чоловіча",
+    "sl-female": "Жіноча",
+    "btn-register": "Регістарція"
+}
