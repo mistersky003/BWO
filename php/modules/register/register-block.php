@@ -6,7 +6,7 @@ $loc = getLocalization("localization/".$_COOKIE['Language']."/register/register.
 
 echo "<link rel=\"stylesheet\" href=\"css/login/login-block.css\">";
 
-echo "<div id=\"login-block\">
+echo "<div class=\"all\"><div id=\"login-block\">
             <p class=\"title\">".$loc['create-your-own-acount']."</p>
             <input id=\"name\" type=\"text\" placeholder=\"".$loc['pr-name']."\" class=\"input\">
             <input id=\"email\" type=\"text\" placeholder=\"".$loc['pr-email']."\" class=\"input\">
@@ -23,6 +23,6 @@ echo "<div id=\"login-block\">
             </select>
             <p class=\"error\"></p>
             <input type=\"submit\" value=\"".$loc['btn-register']."\" class=\"btn-login\">
-         </div> ";
+         </div></div> ";
 
 ?>

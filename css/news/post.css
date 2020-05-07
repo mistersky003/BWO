@@ -1,9 +1,9 @@
 #post-block {
     background-color: #fff;
-    width: 70%;
-    float: left;
-    margin-left: 5%;
-    margin-right: 25%;
+    width: 60%;
+    float: left;position: relative;
+    margin-left: 20%;
+    margin-right: 20%;
     margin-top: 70px;
     margin-bottom: 70px;
 }
@@ -18,10 +18,18 @@
 }
 */
 
+#post-block .img {
+    width: 50%;
+    height: auto;
+    margin: 25px 25%;
+    border
+}
+
 #post-block .title {
     background-color: #fff;
     width: 100%;
     float: left;
+    text-align: center;
     font-size: 1.7em;
     font-weight: 599;
     font-family: 'Source Sans Pro', sans-serif;
@@ -31,6 +39,7 @@
     background-color: #fff;
     width: 100%;
     float: left;
+    overflow: hidden;
     margin-top: 15px;
     font-size: 1.15em;
     font-weight: 599;
@@ -50,21 +59,10 @@
 }
 
 #post-block #recomendation {
-    border-top: 1px solid #858585;
     background-color: #fff;
     width: 100%;
     float: left;
     margin-top: 10px;
-}
-
-#post-block #recomendation a{
-    width: 100%;
-    float: left;
-    margin-top: 25px;
-    font-size: 1.15em;
-    font-weight: 599;
-    font-family: 'Source Sans Pro', sans-serif;
-    color: black;
 }
 
 @media (max-width: 1300px) {
@@ -83,6 +81,7 @@
     background-color: #fff;
     width: 100%;
     float: left;
+    text-align: center
     font-size: 1.75em;
     font-weight: 599;
     font-family: 'Source Sans Pro', sans-serif;

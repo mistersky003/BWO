@@ -71,7 +71,7 @@ if (isset($_COOKIE['user'])) {
        echo "<div id=\"head\">
         <a href=\"index\"><img src=\"img/logo.png\"></a>
         <img src=\"img/menu.png\" id=\"menu-mobile-icon\">
-        <a class=\"vip-log\" href=\"user?token=".$tkn."\" >".$name."</a>
+        <p class=\"vip-log\">".$name."</p>
         <div id=\"menu\">
             <a href=\"programs\" >".$loc['training-programs']."</a>
             <a href=\"news\" >".$loc['whats-new']."</a>
@@ -87,7 +87,7 @@ if (isset($_COOKIE['user'])) {
         echo "<div id=\"head\">
         <a href=\"index\"><img src=\"img/logo.png\"></a>
         <img src=\"img/menu.png\" id=\"menu-mobile-icon\">
-        <a class=\"log\" href=\"user?token=".$tkn."\">".$name."</a>
+        <p id=\"log-auth\" class=\"log\">".$name."</p>
         <div id=\"menu\">
             <a href=\"programs\" >".$loc['training-programs']."</a>
             <a href=\"news\" >".$loc['whats-new']."</a>

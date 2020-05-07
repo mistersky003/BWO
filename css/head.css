@@ -31,6 +31,7 @@
   
 #head .log{
     margin: 14px;
+     cursor: pointer;
     margin-right: 20px;
     float: right;
     background: #0C57FB;
@@ -46,6 +47,7 @@
 }
 
 #head .vip-log{
+    cursor: pointer;
     margin: 14px;
     margin-right: 20px;
     float: right;

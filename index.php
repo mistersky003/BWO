@@ -11,6 +11,7 @@
       <?php
            require '/php/modules/index/title-page.php';
            require '/php/modules/head.php'; 
+           require '/php/modules/user-menu.php'; 
            require '/php/modules/index/preview.php'; 
            require '/php/modules/index/training-block.php'; 
            require '/php/modules/index/apk-block.php'; 

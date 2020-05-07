@@ -1,0 +1,247 @@
+#fon-user-menu {
+    width: 100%;
+    position: fixed;
+    right: 0;
+    top: 0;
+    display: none;
+    height: 100%;
+    z-index: 11;
+    background: #000;
+    opacity: 0.5;
+}
+
+#fon-user-menu.active {
+    display: block;
+}
+
+#user-menu {
+    width: 25%;
+    position: fixed;
+    display: none;
+    right: 0;
+    height: 100%;
+    z-index: 12;
+    background-color: #000;
+    opacity: 1;
+}
+
+
+#user-menu.active {
+    display: block;
+}
+
+#user-menu #btn-close {
+    width: 25px;
+    float: left;
+    height: 25px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+#user-menu #vip-user {
+    width: 100%;
+    float: left;
+}
+
+#user-menu #vip-user img{
+    width: 20%;
+    float: left;
+    margin-left: 40%; 
+    margin-top: -5%;
+}
+
+#user-menu #vip-user #name-user{
+    width: 100%;
+    float: left;
+    text-align: center;
+    color: #FFDF00;
+    font-size: 1.4em;
+    font-weight: 599;
+    font-family: 'Nunito', sans-serif;
+    margin-top: 0%;
+}
+
+#user-menu #user{
+    width: 100%;
+    float: left;
+}
+
+#user-menu #user img{
+    width: 20%;
+    float: left;
+    margin-left: 40%; 
+    margin-top: 0%;
+}
+
+#user-menu #user #name-user{
+    width: 100%;
+    float: left;
+    text-align: center;
+    color: #fff;
+    font-size: 1.4em;
+    font-weight: 599;
+    font-family: 'Nunito', sans-serif;
+    margin-top: 0%;
+    margin-bottom: 25px;
+}
+
+#user-menu #menu-links-block {
+    width: 100%;
+    float: left;
+    text-align: center;
+    color: #fff;
+    font-size: 1.4em;
+    margin-top: 20px;
+    color: #fff;
+    font-weight: 599;
+    font-family: 'Nunito', sans-serif;
+    margin-top: 0%;
+}
+
+#user-menu #menu-links-block #link a{
+    width: 80%;
+    float: left;
+    text-align: left;
+    color: rgb(255,255,255,0.65);
+    margin-left: 10%;
+    margin-top: 15px;
+    font-size: 0.8em;
+    font-weight: 599;
+    font-family: 'Nunito', sans-serif;
+}
+
+#user-menu #menu-links-block #vip-link {
+    width: 80%;
+    float: left;
+    text-align: left;
+    color: #fff;
+    margin-left: 10%;
+    margin-top: 20px;
+    font-size: 1em;
+    font-weight: 599;
+    font-family: 'Nunito', sans-serif;
+}
+
+#user-menu #menu-links-block #vip-link p{
+    color: #FFDF00;
+    font-size: 0.9em;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    border-bottom: 1.1px solid #FFDF00;
+    font-weight: 599;
+    font-family: 'Nunito', sans-serif;
+}
+
+#user-menu #menu-links-block #vip-link a{
+    width: 100%;
+    float: left;
+    color: #FFDF00;
+    font-size: 0.8em;
+    margin-top: 15px;
+    font-weight: 599;
+    font-family: 'Nunito', sans-serif;
+}
+
+
+#user-menu #menu-links-block #link a:hover{
+    color: #fff;
+}
+
+
+@media (max-width: 750px) {
+    
+#fon-user-menu {
+    width: 100%;
+    position: fixed;
+    right: 0;
+    top: 0;
+    height: 100%;
+    z-index: 11;
+    background: #000;
+    opacity: 0.5;
+}
+
+#user-menu {
+    width: 100%;
+    position: fixed;
+    right: 0;
+    height: 100%;
+    z-index: 12;
+    background-color: #000;
+    opacity: 1;
+}
+
+
+#user-menu #vip-user {
+    width: 100%;
+    float: left;
+}
+
+#user-menu #vip-user #crown{
+    margin-top: 0%;
+}
+
+#user-menu #vip-user img{
+    width: 20%;
+    float: left;
+    margin-left: 40%; 
+    margin-top: -5%;
+}
+
+#user-menu #vip-user #name-user{
+    width: 100%;
+    float: left;
+    text-align: center;
+    color: #FFDF00;
+    font-size: 1.4em;
+    font-weight: 599;
+    font-family: 'Nunito', sans-serif;
+    margin-top: 0%;
+}
+    
+#user-menu #menu-links-block #link a{
+    width: 80%;
+    float: left;
+    text-align: center;
+    color: #fff;
+    margin-left: 10%;
+    margin-top: 15px;
+    font-size: 1em;
+    font-weight: 599;
+    font-family: 'Nunito', sans-serif;
+}
+
+#user-menu #menu-links-block #vip-link {
+    width: 80%;
+    float: left;
+    text-align: center;
+    color: #fff;
+    margin-left: 10%;
+    margin-top: 20px;
+    font-size: 1em;
+    font-weight: 599;
+    font-family: 'Nunito', sans-serif;
+}
+
+#user-menu #menu-links-block #vip-link p{
+    color: #FFDF00;
+    font-size: 1em;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    border-bottom: 1.1px solid #FFDF00;
+    font-weight: 599;
+    font-family: 'Nunito', sans-serif;
+}
+
+#user-menu #menu-links-block #vip-link a{
+    width: 100%;
+    float: left;
+    color: #FFDF00;
+    font-size: 1em;
+    margin-top: 15px;
+    font-weight: 599;
+    font-family: 'Nunito', sans-serif;
+}
+    
+}
+
